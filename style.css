@@ -1,0 +1,314 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mona-sans";
+    color: black;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #F8F7F4;
+}
+*::selection{
+    background-color: #fbe8b5;
+}
+main{
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "Mona-Sans";
+    src: url(fonts/Mona-Sans.ttf);
+}
+@font-face {
+    font-family: 'source serif 4';
+    src: url(fonts/vEFF2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6kDXr4.ttf);
+}
+
+
+/* pre-property */
+.pointer:hover{
+    cursor:pointer;
+    opacity: 0.85;
+}
+.btn{
+    padding: 15px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.btn_black{
+    background-color: black;
+    color: white;
+}
+.btn_transparent{
+    background-color: #F8F7F4;
+    color: black;
+    font-weight: 600;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* page1 */
+#page1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* nav */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 100px;
+}
+nav .nav_left, nav .nav_left span{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+nav .nav_left .a_svg svg{
+    height: 28px;
+}
+nav .nav_left a{
+    font-size: 15px;
+    font-weight: 600;
+}
+nav .nav_right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+nav .nav_right form{
+    background-color: white;
+    border-radius: 25px;
+    padding: 12px;
+}
+nav .nav_right input{
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px;
+    height: 18px;
+    width: 15vw;
+    outline: none;
+    border: none;
+}
+
+/* page1 section hero */
+#page1 #hero{
+    height: calc(100% - 100px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 18vw;
+    margin: 70px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#page1 #hero .p1_btn{
+    background-color: #FBE8B5;
+    font-size: 16px;
+    font-weight: 600 !important;
+}
+#page1 #hero h1{
+    font-size: 70px;
+    font-family: "source serif 4";
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+/* page1 section images */
+#page1 #images{
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 25px;
+}
+#page1 #images::-webkit-scrollbar{
+    display: none;
+}
+#page1 #images .image{
+    margin-right: 25px;
+    display: inline-block;
+    height: 320px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: gray;
+    animation: scroll;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+/* page2 */
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+#page2 h2{
+    font-family: 'mona-sans';
+    font-size: 50px;
+}
+#page2 #designs{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2vw;
+    padding: 30px;
+}
+#page2 #designs .design{
+    height: 200px;
+    /* min-width: 22vw; */
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+#page2 #designs .design:hover .bottom_design{
+    bottom: 0%;
+}
+#page2 #designs .design .bottom_design{  
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: all ease 0.3s;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+}
+#page2 #designs .design .bottom_design p{
+    display: flex;
+    gap: 10px;
+}
+#page2 #designs .design .bottom_design .bottom_i{
+    border-radius: 50%;
+    padding: 8px;
+    background-color: white;
+}
+#page2 #designs .design .bottom_design p:first-child {
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 65%; /* Limit width to 50% */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide the overflowing text */
+    text-overflow: ellipsis; /* Add '...' when text overflows */
+    display: inline-block;
+}
+
+
+/* page3 */
+#page3{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #FFDA79;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    padding: 0 30%;
+    margin-top: 20px;
+}
+#page3 h1{
+    font-size: 65px;
+    font-family: "source serif 4";
+    font-weight: 500;
+    line-height: 1.1;
+}
+#page3 p, #page3 p a{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+#page3 p a{
+    text-decoration: underline;
+}
+#page3 div{
+    display: flex;
+    gap: 15px;
+}
+
+
+/* footer */
+#footer{
+    height: 30vh;
+    width: 100%;
+}
+#footer #upper{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+#footer #upper #u_left a svg{
+    height: 28px;
+}
+#footer #upper #u_center{
+    display: inline-block;
+    white-space: nowrap;
+}
+#footer #upper #u_center a{
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+} 
+#footer #upper #u_right{
+    display: flex;
+    gap: 15px;
+}
+#footer #upper #u_right i{
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+#footer #lower{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+#footer #lower #l_left, #footer #lower #l_right{
+    display: flex;
+    gap: 15px;
+}
+#footer #lower #l_left p{
+    cursor: default;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    } to {
+        transform: translateX(-550%);
+    }
+}
