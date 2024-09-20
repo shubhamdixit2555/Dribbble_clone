@@ -11,7 +11,7 @@ html, body{
     width: 100%;
 }
 body{
-    background-color: green;
+    background-color: #F8F7F4;
 }
 *::selection{
     background-color: #fbe8b5;
