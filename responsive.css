@@ -6,6 +6,44 @@
         padding: 10px 18px;
         border-radius: 30px;
     }
+    /* making alert box */
+    .alert_box{
+        padding: 15px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .alert_box .left i{
+        font-size: 150px;
+        border:  5px solid #ffbb00;
+        border-radius: 50%;
+        padding: 40px;
+    }
+    .alert_box .left{
+        height: 40%;
+    }
+    .alert_box .right{
+        padding: 20px;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .alert_box .right h1{
+        font-size: 28px;
+    }
+    .alert_box .right h2{
+        font-size: 17px;
+    }
+    .alert_box .right button{
+        font-size: 20px;
+    }
+    .alert_box .right .shubham{
+        font-size: 18px;
+        bottom: 6%;
+        right: 6%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
     /* nav */
     nav .nav_left{
         gap: 20px;

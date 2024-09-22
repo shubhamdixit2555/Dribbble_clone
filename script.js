@@ -1,4 +1,13 @@
 
+// notice 
+document.querySelector("#notice_continue").addEventListener("click", () => {
+    document.querySelector(".alert_box").style.display = 'none';
+    document.body.classList.remove('no-scroll');
+});
+
+// Initially disable scrolling
+document.body.classList.add('no-scroll');
+
 
 // Array of image URLs
 const images = [
