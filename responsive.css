@@ -176,6 +176,47 @@
     #page3 {
         min-height: 100vh;
     }
+    /* footer */
+    #footer{
+        height: auto;
+        padding: 20px;
+        gap: 25px;
+        justify-content: center;
+    }
+    #footer #upper{
+        padding: 0px;
+        height: 50%;
+        gap: 20px;
+        justify-content: center;
+    }
+    #footer #lower{
+        padding: 0;
+        height: 50%;
+        gap: 20px;
+        justify-content: center;
+    }
+    #footer #lower #l_left{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    #footer #lower #l_right{
+        padding: 0px 10vw;
+    }
+    #footer #lower #l_right a, #footer #upper #u_center a{
+        font-size: 14px;
+        white-space: wrap;
+        margin-right: 10px;
+        font-weight: 600;
+    }
+    #footer #upper #u_center{
+        justify-content: center;
+        gap: 2px;
+        width: 80vw;
+    }
+    #footer #lower #l_right a{
+        font-weight: 500;
+    }
 }
 
 /* responsive for tab */
